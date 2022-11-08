@@ -11,6 +11,11 @@ https://aluratube-leonardo.vercel.app/
 ## Onde está o Layout base do projeto?
 - [Link](https://www.figma.com/file/1acrju7CLwHkSh6e7xEk9h/Aluratube?node-id=0%3A1)
 
+##Links:
+- https://pt-br.reactjs.org/
+- https://nextjs.org/
+- https://styled-components.com/
+
 
 # Contribuidores 
 
