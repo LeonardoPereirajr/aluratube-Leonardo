@@ -17,7 +17,8 @@ https://aluratube-leonardo.vercel.app/
 - https://styled-components.com/
 
 
-# Contribuidores 
+## Contributing/Contribuir
+Quer contribuir com o projeto? [Confira o passo a passo](./CONTRIBUTING.md)
 
 | Leonardo Pereira | 
 | --- |
