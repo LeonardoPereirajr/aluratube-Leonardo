@@ -19,7 +19,7 @@ https://aluratube-leonardo.vercel.app/
 
 # Contribuidores 
 
-| Leoanrdo Pereira | 
+| Leonardo Pereira | 
 | --- |
 | <!-- CHANNEL_PROJECTS:START -->
 <!-- CHANNEL_PROJECTS:END --> |
