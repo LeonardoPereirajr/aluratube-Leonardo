@@ -2,6 +2,21 @@
     "name": "Leonardo Pereira",
     "job": "BackEnd Developer",
     "github": "LeonardoPereirajr",
+    "banner": "https://images.unsplash.com/photo-1623425484828-7eccb29713a7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80",
+    "favoritos": {
+        "Canais Recomendados": [
+            {
+                "imgUser": "https://yt3.ggpht.com/m8Yrqf0Y81L4mZ1Cq7rGnJ4NDHe6729rxiFZvWyy9-xd_Z7Osmza7J8NWpN1axMHcCb1oKJNgA=s88-c-k-c0x00ffffff-no-rj",
+                "nameUser": "Mario Souto - Dev Soutinho",
+                "urlUser": "https://www.youtube.com/c/DevSoutinho"
+            },
+            {
+                "imgUser":"https://yt3.ggpht.com/xqhIoXspeX7eqouJvNHl1xqpv9213Pl26ENZbuouXxO2RlDadjsveNXfgnj8GTUk7thFYUkVRg=s88-c-k-c0x00ffffff-no-rj",
+                "nameUser":"Alura Cursos Online",
+                "urlUser":"https://www.youtube.com/user/aluracursosonline"
+            }
+        ]
+    },
     "playlists": {
         "jogos": [
             {
@@ -15,7 +30,7 @@
                 "thumb": "https://img.youtube.com/vi/mnhCOBsCExs/hqdefault.jpg"
             }
         ],
-        "front-end": [
+        "front-end e Infra": [
             {
                 "title": "Começando com Kafka - Hipsters Ponto Talks #12",
                 "url": "https://www.youtube.com/watch?v=aaCqcX30pzc&t=6s",

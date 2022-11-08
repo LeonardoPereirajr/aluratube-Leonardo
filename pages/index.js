@@ -3,63 +3,56 @@ import styled from "styled-components";
 import { CSSReset } from "../src/components/CSSReset";
 import Menu from "../src/components/Menu";
 import { StyledTimeline } from "../src/components/Timeline";
+import { StyledFavorites } from "../src/components/Favorites";
 
 function HomePage() {
-    const estilosDaHomePage = {
+    const estiloDaPagina = {
         // backgroundColor: "red" 
-    };
+        };
 
-    // console.log(config.playlists);
+    //console.log(config.playlist);
 
     return (
         <>
-            <CSSReset />
-            <div style={{
-                display: "flex",
-                flexDirection: "column",
-                flex: 1,
-                // backgroundColor: "red",
-            }}>
-                <Menu />
-                <Header />
-                <Timeline playlists={config.playlists}>
-                    Conteúdo
-                </Timeline>
-            </div>
+        <CSSReset />
+        <div style={estiloDaPagina}>
+            <Menu />
+            <Header />
+            <Timeline playlists={config.playlists} />
+            <Favoritos favoritos={config.favoritos} />
+        </div>
         </>
-    );
+    )
 }
 
 export default HomePage
 
-// function Menu() {
-//     return (
-//         <div>
-//             Menu
-//         </div>
-//     )
-// }
-
-
 const StyledHeader = styled.div`
-    img {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-    }
-    .user-info {
-        margin-top: 50px;
-        display: flex;
-        align-items: center;
-        width: 100%;
-        padding: 16px 32px;
-        gap: 16px;
-    }
+.user-info img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.user-info {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 16px 32px;
+    gap: 16px;
+}
+.imgBanner {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+}
 `;
 function Header() {
     return (
         <StyledHeader>
-            {/* <img src="banner" /> */}
+            <section>
+                <img src={config.banner} className="imgBanner" />
+            </section>
             <section className="user-info">
                 <img src={`https://github.com/${config.github}.png`} />
                 <div>
@@ -105,5 +98,35 @@ function Timeline(propriedades) {
                 )
             })}
         </StyledTimeline>
+    )
+}
+
+function Favoritos(props){
+    const listFavoritos = Object.keys(props.favoritos);
+
+    return (
+        <StyledFavorites>
+            {listFavoritos.map((listFavoritos) => {
+                const canais = props.favoritos[listFavoritos];
+                console.log(canais);
+                return (
+                    <section>
+                        <h2>{listFavoritos}</h2>
+                        <div>
+                            {canais.map((canais) => {
+                                return (
+                                    <a href={   canais.urlUser}>
+                                        <img src={canais.imgUser} />
+                                        <span>
+                                            {canais.nameUser}
+                                        </span>
+                                    </a>
+                                )
+                            })}
+                        </div>
+                    </section>
+                );
+            })}
+        </StyledFavorites>
     )
 }
