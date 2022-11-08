@@ -11,14 +11,14 @@
                 "urlUser": "https://www.youtube.com/c/DevSoutinho"
             },
             {
-                "imgUser":"https://yt3.ggpht.com/xqhIoXspeX7eqouJvNHl1xqpv9213Pl26ENZbuouXxO2RlDadjsveNXfgnj8GTUk7thFYUkVRg=s88-c-k-c0x00ffffff-no-rj",
-                "nameUser":"Alura Cursos Online",
-                "urlUser":"https://www.youtube.com/user/aluracursosonline"
+                "imgUser": "https://yt3.ggpht.com/xqhIoXspeX7eqouJvNHl1xqpv9213Pl26ENZbuouXxO2RlDadjsveNXfgnj8GTUk7thFYUkVRg=s88-c-k-c0x00ffffff-no-rj",
+                "nameUser": "Alura Cursos Online",
+                "urlUser": "https://www.youtube.com/user/aluracursosonline"
             }
         ]
     },
     "playlists": {
-        "jogos": [
+        "Canais diversos Cultura Pop": [
             {
                 "title": "GHOST E EU NO TIRO! - Call of Duty Modern Warfare 2",
                 "url": "https://www.youtube.com/watch?v=9HB4ollRJMM",
@@ -28,7 +28,28 @@
                 "title": "RATO ARMADO MUITO LOCO! - GTA V (MODS)",
                 "url": "https://www.youtube.com/watch?v=mnhCOBsCExs",
                 "thumb": "https://img.youtube.com/vi/mnhCOBsCExs/hqdefault.jpg"
+            },
+            {
+                "title": "A História Completa da Dança dos Dragões | House of the Dragon",
+                "url": "https://www.youtube.com/watch?v=2xNltQwqWWY&list=LL&index=32&t=232s",
+                "thumb": "https://img.youtube.com/vi/2xNltQwqWWY/hqdefault.jpg"
+            },
+            {
+                "title": "Os Anéis de Poder 1x08 - Sauron, finalmente... | O Senhor dos Anéis",
+                "url": "https://www.youtube.com/watch?v=LK0GBmb4tJw&list=LL&index=49",
+                "thumb": "https://img.youtube.com/vi/LK0GBmb4tJw/hqdefault.jpg"
+            },
+            {
+                "title": "THE OLD MAN: MELHOR SÉRIE DO STAR+? | DerivadoCast #302",
+                "url": "https://www.youtube.com/watch?v=B1nXRQU8qPk",
+                "thumb": "https://img.youtube.com/vi/B1nXRQU8qPk/hqdefault.jpg"
+            },
+            {
+                "title": "O Silmarillion (parte 1)– Legendarium de Tolkien - J.R.R. Tolkien - audiobook em PT BR",
+                "url": "https://www.youtube.com/watch?v=YF87VgQrBJ8&list=LL&index=162&t=566s",
+                "thumb": "https://img.youtube.com/vi/YF87VgQrBJ8/hqdefault.jpg"
             }
+            
         ],
         "front-end e Infra": [
             {
@@ -40,7 +61,28 @@
                 "title": "TUDO que você deve estudar de JavaScript antes do React",
                 "url": "https://www.youtube.com/watch?v=37SwqREHRGI&list=WL&index=9&t=694s",
                 "thumb": "https://img.youtube.com/vi/37SwqREHRGI/hqdefault.jpg"
+            },
+            {
+                "title": "Narrando: A rotina de um desenvolvedor de software",
+                "url": "https://www.youtube.com/watch?v=Kod3h2g_dIg&list=LL&index=61&t=632s",
+                "thumb": "https://img.youtube.com/vi/Kod3h2g_dIg/hqdefault.jpg"
+            },
+            {
+                "title": "COMO ACORDAR SEM SONO | Cortes Lutz Podcast",
+                "url": "https://www.youtube.com/watch?v=73AKI4dHnOA&list=LL&index=72&t=351s",
+                "thumb": "https://img.youtube.com/vi/73AKI4dHnOA/hqdefault.jpg"
+            },
+            {
+                "title": "Webhooks (Os Melhores Apps Usam) // Dicionário do Programador",
+                "url": "https://www.youtube.com/watch?v=2JHKIrComW0&list=LL&index=129&t=383s",
+                "thumb": "https://img.youtube.com/vi/2JHKIrComW0/hqdefault.jpg"
+            },
+            {
+                "title": "O que um Sênior sabe, que um Pleno não sabe e um Júnior menos ainda",
+                "url": "https://www.youtube.com/watch?v=DYz3A9DT-Qc&list=WL&index=35",
+                "thumb": "https://img.youtube.com/vi/DYz3A9DT-Qc/hqdefault.jpg"
             }
+
         ],
         "back-end": [
             {
@@ -52,7 +94,28 @@
                 "title": "Aula de Programação Orientada a Objetos em Kotlin do básico ao avançado",
                 "url": "https://www.youtube.com/watch?v=iNCJfI48cKQ&list=WL&index=16&t=281s",
                 "thumb": "https://img.youtube.com/vi/iNCJfI48cKQ/hqdefault.jpg"
+            },
+            {
+                "title": "Java + Spring Webflux - Consumindo a API do Rick and Morty com o webclient #java #webflux #backend",
+                "url": "https://www.youtube.com/watch?v=LOJaE2MjTjE&list=WL&index=39",
+                "thumb": "https://img.youtube.com/vi/LOJaE2MjTjE/hqdefault.jpg"
+            },
+            {
+                "title": "CRIANDO UM MICROSERVICE DE ENVIO DE EMAIL",
+                "url": "https://www.youtube.com/watch?v=ZBleZzJf6ro",
+                "thumb": "https://img.youtube.com/vi/ZBleZzJf6ro/hqdefault.jpg"
+            },
+            {
+                "title": "MICROSERVICES COM SPRING CLOUD: OVERVIEW COMPLETO!",
+                "url": "https://www.youtube.com/watch?v=LW-N44fZ1wk",
+                "thumb": "https://img.youtube.com/vi/LW-N44fZ1wk/hqdefault.jpg"
+            },
+            {
+                "title": "Sequência correta de estudo para ser programador Java",
+                "url": "https://www.youtube.com/watch?v=t9GJfe8TjNo&list=WL&index=21",
+                "thumb": "https://img.youtube.com/vi/t9GJfe8TjNo/hqdefault.jpg"
             }
+
         ]
     }
 }
