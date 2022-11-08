@@ -1,6 +1,6 @@
 # Aluratube
 
-Seja bem vindo ao projeto base do Aluratube!!! Passos fundamentais:
+Seja bem vindo ao projeto base do Aluratube!!! 
 
 https://aluratube-leonardo.vercel.app/
 
