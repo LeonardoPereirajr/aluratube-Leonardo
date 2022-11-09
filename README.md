@@ -4,7 +4,7 @@ Seja bem vindo ao projeto base do Aluratube!!!
 
 https://aluratube-leonardo.vercel.app/
 
-![image](https://user-images.githubusercontent.com/30580018/200690420-89bfe0d0-8992-4604-8857-498c5d2bba8e.png)
+![image](https://user-images.githubusercontent.com/30580018/200714056-c25cee5e-5df9-4d30-a0c5-95d0eed1f4e5.png)
 
 
 
