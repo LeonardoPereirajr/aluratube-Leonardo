@@ -33,7 +33,7 @@ function ProviderWrapper(props) {
     )
 }
 
-function Root({ Component, pageProps }) {
+function MyApp({ Component, pageProps }) {
     const contexto = React.useContext(ColorModeContext);
     console.log(contexto.mode);
 
@@ -51,7 +51,7 @@ function Root({ Component, pageProps }) {
 export default function _App(props) {
     return (
         <ProviderWrapper>
-            <Root {...props} />
+            <MyApp {...props} />
         </ProviderWrapper>
     )
 };

@@ -1,8 +1,15 @@
 import React from "react";
 import { StyledRegisterVideo } from "./styles";
+import { createClient } from "@supabase/supabase-js";
 
-// Whiteboarding
-// Custom Hook
+
+
+function getThumbnail(url) {
+    const thumb = `${url.split('v=')[1]}`;
+    return `https://img.youtube.com/vi/${thumb.split('&')[0]}/hqdefault.jpg`;
+    
+}
+
 function useForm(propsDoForm) {
     const [values, setValues] = React.useState(propsDoForm.initialValues);
 
@@ -11,7 +18,7 @@ function useForm(propsDoForm) {
         handleChange: (evento) => {
             console.log(evento.target);
             const value = evento.target.value;
-            const name = evento.target.name
+            const name = evento.target.name;
             setValues({
                 ...values,
                 [name]: value,
@@ -23,19 +30,15 @@ function useForm(propsDoForm) {
     };
 }
 
+const PROJECT_URL = "https://fdmvidiqrjpcjgvcrsrj.supabase.co";
+const PUBLIC_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZkbXZpZGlxcmpwY2pndmNyc3JqIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjgzNDQ3MjcsImV4cCI6MTk4MzkyMDcyN30.JyIrgOFcPe6-MCwMfkNTU4VRTxtA5fPZNyrknPXgJ8c";
+const supabase = createClient(PROJECT_URL, PUBLIC_KEY);
+
 export default function RegisterVideo() {
     const formCadastro = useForm({
-        initialValues: { titulo: "Começando com..", url: "https://youtube.." }
+        initialValues: { titulo: "Começando com..", url: "https://www.youtube.com/watch?v=lM9JAKH1UyA&t=392",playlist: "jogos"},
     });
     const [formVisivel, setFormVisivel] = React.useState(false);
-    /*
-    ## O que precisamos para o form funcionar?
-    - pegar os dados, que precisam vir do state
-        - titulo
-        - url do vídeo 
-    - precisamos ter um onSubmit do nosso form
-    - Limpar o formulário após o Submit
-    */
 
     return (
         <StyledRegisterVideo>
@@ -47,8 +50,22 @@ export default function RegisterVideo() {
             {formVisivel
                 ? (
                     <form onSubmit={(evento) => {
-                        evento.preventDefault();//evitar o comportamento padrão do form
+                        evento.preventDefault();
                         console.log(formCadastro.values);
+                        
+                        // Contrato entre o nosso Front e o BackEnd
+                        supabase.from("video").insert({
+                            title: formCadastro.values.titulo,
+                            url: formCadastro.values.url,
+                            thumb: getThumbnail(formCadastro.values.url),
+                            playlist: formCadastro.values.playlist,
+                         })
+                         .then((oqueveio) => {
+                            console.log(oqueveio);
+                         })
+                         .catch((err) => {
+                            console.log(err);
+                         })
 
                         setFormVisivel(false);
                         formCadastro.clearForm();
@@ -69,6 +86,15 @@ export default function RegisterVideo() {
                                 value={formCadastro.values.url}
                                 onChange={formCadastro.handleChange}
                             />
+
+                            
+                            <input
+								placeholder="Nome da playlist"
+								name="playlist"
+								value={formCadastro.values.playlist}
+								onChange={formCadastro.handleChange}
+								required
+							/>
                             <button type="submit">
                                 Cadastrar
                             </button>
@@ -79,9 +105,3 @@ export default function RegisterVideo() {
         </StyledRegisterVideo>
     )
 }
-
-
-// [X] Falta o botão para adicionar
-// [X] Modal
-// -> [X] Precisamos controlar o state
-// -> Formulário em si
