@@ -20,6 +20,12 @@ https://aluratube-leonardo.vercel.app/
 ## Contributing/Contribuir
 Quer contribuir com o projeto? [Confira o passo a passo](./CONTRIBUTING.md)
 
+## Como o projeto esta montado?
+
+- _app.js : Carrega o setup base do projeto
+    -   Aqui ficam os Providers de informações do projeto
+    -   CSSReset
+
 | Leonardo Pereira | 
 | --- |
 | <!-- CHANNEL_PROJECTS:START -->
