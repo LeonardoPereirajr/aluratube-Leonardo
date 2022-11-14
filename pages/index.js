@@ -11,7 +11,7 @@ import { videoService } from "../src/components/services/videoService";
 function HomePage() {
     const service = videoService();
     const [valorDoFiltro, setValorDoFiltro] = React.useState("");
-    const [playlists, setPlaylists] = React.useState({});
+    const [playlists, setPlaylists] = React.useState({});  
 
 
     React.useEffect(() => {
@@ -31,6 +31,7 @@ function HomePage() {
                 });
 
                 setPlaylists(novasPlaylists);
+                console.log(novasPlaylists);
             });
     }, []);
 
@@ -41,13 +42,14 @@ function HomePage() {
                 flexDirection: "column",
                 flex: 1,
             }}>
-                {/* Prop Drilling */}
                 <Menu valorDoFiltro={valorDoFiltro} setValorDoFiltro={setValorDoFiltro} />
-                <Header />
-                <Timeline searchValue={valorDoFiltro} playlists={config.playlists}>
-                
+                <Header/>
+                <Timeline searchValue={valorDoFiltro} playlists={playlists}>
+                    Conteúdo
+                    
                 </Timeline>
                 <Favoritos favoritos={config.favoritos} />
+                <Footer />
             </div>
         </>
     );
@@ -161,5 +163,23 @@ function Favoritos(props) {
                 );
             })}
         </StyledFavorites>
+    )
+}
+const StyledFooter = styled.div`
+    background-color: ${({ theme }) => theme.backgroundLevel1};
+    text-align: center;
+    .companyLink{
+        color: ${({ theme }) => theme.textColorBase};
+    }
+    footer{
+        margin: 40px;
+        font-size: 12px;
+    }
+`;
+function Footer() {
+    return (
+        <StyledFooter>
+            <footer>Feito por <a className="companyLink" href="https://github.com/LeonardoPereirajr" target="_Blank">Leonardo Pereira</a> durante o evento Imersão React da plataforma <a className="companyLink" href="https://www.alura.com.br/" target="_Blank">Alura</a> © 2022</footer>
+        </StyledFooter>
     )
 }
