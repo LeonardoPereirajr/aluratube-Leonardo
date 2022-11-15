@@ -2,6 +2,7 @@ import React from "react";
 import { StyledRegisterVideo } from "./styles";
 import { createClient } from "@supabase/supabase-js";
 import { videoService } from "../services/videoService";
+import config from "../../../config.json";
 
 
 function getThumbnail(url) {
