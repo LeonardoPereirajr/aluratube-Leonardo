@@ -2,7 +2,6 @@ import React from "react";
 import { StyledRegisterVideo } from "./styles";
 import { createClient } from "@supabase/supabase-js";
 import { videoService } from "../services/videoService";
-import config from "C:/Users/leojr/Worskpace6/aluratube/config.json";
 
 
 function getThumbnail(url) {
